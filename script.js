@@ -17,7 +17,7 @@ function changergb() {
 function changehex(){	
 	console.log("gfhfgh");
 	const randomColor = Math.floor(Math.random()*16777215).toString(16);
-	changehtml(randomColor);
+	changehtml("#"+randomColor);
 }
 function changegrd(){
 	console.log("gfhfgh");
