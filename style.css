@@ -42,12 +42,10 @@ body{
 	.cont h1{
 		font-size: 15px;
 	}
-
-}
-@media screen and (max-width:400px){
-	.box h2{
-		font-size:15px;
+	.cont .box h2{
+		font-size: 15px;
 	}
+
 }
 .buttons{
 	flex: 100%;
