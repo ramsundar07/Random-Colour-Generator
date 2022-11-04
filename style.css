@@ -1,0 +1,72 @@
+.{
+	margin: 0px;
+
+}
+html,body{
+	height:100%;
+}
+body{
+	transition: all 1s ;
+	background: rgb(59, 249, 135);
+}
+.header{
+	flex-wrap: wrap;
+	display: flex;
+	text-align: left;
+}
+.header h1{
+	font-family: 'Changa', sans-serif;
+	flex: 100%;
+	padding-left: 20px;
+	padding-top: 10px;
+}
+.header hr{
+	flex: 100%;
+	border: 1px solid black;
+	max-width: 95%;
+	margin-left: 10px;
+}
+.cont{
+	flex-wrap: wrap;
+	display: flex;
+	align-items: center;
+    justify-content: center;
+	text-align: center;
+	margin: 10% 10% 0px 10%;
+	
+}
+@media screen and (max-width: 400px){
+	.cont{
+	font-size:25px;
+	}
+	.cont h1{
+		font-size: 15px;
+	}
+
+}
+.buttons{
+	flex: 100%;
+	padding: 10px;
+}
+button{
+	
+	border-radius: 10px;
+	padding: 20px;
+}
+.btn{
+	transition: all 1s;
+}
+.btn:hover{
+	transform: scale(1.07);
+}
+.box{
+	border: 2px black;
+	border-radius: 20px;
+	border-style: solid;
+	flex: 100%;
+	padding: 10px;
+	
+}
+#gen{
+	display: none;
+}
