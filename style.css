@@ -44,6 +44,11 @@ body{
 	}
 
 }
+@media screen and (max-width:400px){
+	.box h2{
+		font-size:15px;
+	}
+}
 .buttons{
 	flex: 100%;
 	padding: 10px;
