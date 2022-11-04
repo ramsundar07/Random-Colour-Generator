@@ -23,8 +23,7 @@ function changegrd(){
 	console.log("gfhfgh");
 	var c1=Math.floor(Math.random()*16777215).toString(16);
 	var c2=Math.floor(Math.random()*16777215).toString(16);
-	var deg=Math.floor(Math.random()*360);
-	var color = "linear-gradient("+deg+"deg,#" +c1+",#"+ c2+")";
+	var color = "linear-gradient("+45+"deg,#" +c1+",#"+ c2+")";
 	bodytag.style.backgroundImage  = color;
 	h2.innerHTML =color;
 }
