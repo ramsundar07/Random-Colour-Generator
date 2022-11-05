@@ -21,27 +21,31 @@ function changehex(){
 }
 function changegrd(){
 	console.log("gfhfgh");
-	var c1=Math.floor(Math.random()*16777215).toString(16);
-	var c2=Math.floor(Math.random()*16777215).toString(16);
-	var color = "linear-gradient("+45+"deg,#" +c1+",#"+ c2+")";
+	// var c1=Math.floor(Math.random()*16777215).toString(16);
+	// var c2=Math.floor(Math.random()*16777215).toString(16);
+	var deg=Math.floor(Math.random()*360);
+	var color = "linear-gradient("+45+"deg," +buttongrad1.value+","+ buttongrad2.value+")";
 	bodytag.style.backgroundImage  = color;
 	h2.innerHTML =color;
 }
 
 function displayrgb(){
-	buttongrad.style.display='none';
+	buttongrad2.style.display='none';
+	buttongrad1.style.display='none';
 	buttonhex.style.display='none';
 	buttonrgb.style.display='';
 }
 function displayhex(){
-	buttongrad.style.display='none';
+	buttongrad1.style.display='none';
+	buttongrad2.style.display='none';
 	buttonrgb.style.display='none';
 	buttonhex.style.display='';
 }
 function displaygrad(){
 	buttonrgb.style.display='none';
 	buttonhex.style.display='none';
-	buttongrad.style.display='';
+	buttongrad1.style.display='';
+	buttongrad2.style.display='';
 
 }
 
@@ -50,13 +54,16 @@ function displaygrad(){
 const buttonhex =document.getElementById('genhex');
 const buttonrgb=document.getElementById("genrgb");
 const h2 = document.getElementById("color");
-const buttongrad =document.getElementById("gengrad");
+const buttongrad1 =document.getElementById("gengrad1");
+const buttongrad2 =document.getElementById("gengrad2");
 
 buttonrgb.addEventListener("click", changergb);
 buttonhex.addEventListener("click", changehex);
-buttongrad.addEventListener("click",changegrd)
+buttongrad1.addEventListener("input",changegrd);
+buttongrad2.addEventListener("input",changegrd);
 buttonrgb.style.display='none';
-buttongrad.style.display='none';
+buttongrad1.style.display='none';
+buttongrad2.style.display='none';
 
 document.getElementById("hex").addEventListener("click", displayhex);
 document.getElementById("rgb").addEventListener("click", displayrgb);
